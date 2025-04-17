@@ -1,8 +1,8 @@
 package routes
 
 import (
-	middleware "github.com/rohitbisht01/authentication-with-jwt-mongodb//middlewares"
 	controller "github.com/rohitbisht01/authentication-with-jwt-mongodb/controllers"
+	middleware "github.com/rohitbisht01/authentication-with-jwt-mongodb/middlewares"
 
 	"github.com/gin-gonic/gin"
 )

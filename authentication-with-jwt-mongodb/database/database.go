@@ -21,13 +21,13 @@ func DBinstance() *mongo.Client {
 	MongoDBURL := os.Getenv("MONGODB_URL")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
 
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI(MongoDBURL))
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	defer cancel()
 	fmt.Println("Connected to mongodb")
 
 	return client
