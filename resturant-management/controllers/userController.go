@@ -29,8 +29,8 @@ func GetUser() gin.HandlerFunc {
 	}
 }
 
-func HashPassword(password string) string {}
+// func HashPassword(password string) string {}
 
-func VerfifyPassword(userPassword string, providedPassword string) bool {
+// func VerfifyPassword(userPassword string, providedPassword string) bool {
 
-}
+// }

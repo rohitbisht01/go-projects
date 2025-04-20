@@ -6,13 +6,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"github.com/rohitbisht01/resturant-management/database"
-	"github.com/rohitbisht01/resturant-management/middlewares"
 	routes "github.com/rohitbisht01/resturant-management/routes"
-	"go.mongodb.org/mongo-driver/mongo"
 )
-
-var foodCollection *mongo.Client = database.OpenCollection(database.Client, "food")
 
 func main() {
 	err := godotenv.Load(".env")
@@ -29,7 +24,7 @@ func main() {
 	router.Use(gin.Logger())
 
 	routes.UserRoutes(router)
-	router.Use(middlewares.Authentication())
+	// router.Use(middlewares.Authentication())
 
 	routes.FoodRoutes(router)
 	routes.MenuRoutes(router)

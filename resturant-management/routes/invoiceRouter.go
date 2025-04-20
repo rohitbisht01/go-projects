@@ -5,7 +5,7 @@ import (
 	"github.com/rohitbisht01/resturant-management/controllers"
 )
 
-func InvoiceRouter(incomingRoutes *gin.Engine) {
+func InvoiceRoutes(incomingRoutes *gin.Engine) {
 	incomingRoutes.GET("/invoices", controllers.GetInvoices())
 	incomingRoutes.GET("/invoices/:invoice_id", controllers.GetInvoice())
 	incomingRoutes.POST("/invoices", controllers.CreateInvoice())
