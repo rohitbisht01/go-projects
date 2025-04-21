@@ -1,0 +1,31 @@
+{
+  "coord": { "lon": 79.6667, "lat": 29.6167 },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 294.45,
+    "feels_like": 293.5,
+    "temp_min": 294.45,
+    "temp_max": 294.45,
+    "pressure": 1014,
+    "humidity": 33,
+    "sea_level": 1014,
+    "grnd_level": 838
+  },
+  "visibility": 10000,
+  "wind": { "speed": 0.52, "deg": 169, "gust": 0.74 },
+  "clouds": { "all": 84 },
+  "dt": 1745252882,
+  "sys": { "country": "IN", "sunrise": 1745194113, "sunset": 1745241072 },
+  "timezone": 19800,
+  "id": 1278974,
+  "name": "Almora",
+  "cod": 200
+}
